@@ -1,0 +1,65 @@
+{
+  "name": "ky-langding-page",
+  "description": "",
+  "version": "0.0.1",
+  "keywords": [
+    "web"
+  ],
+  "homepage": "http://kybot.io",
+  "author": "Oliver",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "style": "dist/css/bootstrap.css",
+  "less": "less/bootstrap.less",
+  "main": "./dist/js/npm",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twbs/bootstrap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twbs/bootstrap/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-csslint": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-csscomb": "latest",
+    "load-grunt-tasks": "latest",
+    "time-grunt": "latest"
+  },
+  "files": [
+    "dist",
+    "fonts",
+    "grunt",
+    "js/*.js",
+    "less/**/*.less",
+    "Gruntfile.js",
+    "LICENSE"
+  ],
+  "jspm": {
+    "main": "js/bootstrap",
+    "shim": {
+      "js/bootstrap": {
+        "deps": "jquery",
+        "exports": "$"
+      }
+    },
+    "files": [
+      "css",
+      "fonts",
+      "js"
+    ]
+  }
+}
+

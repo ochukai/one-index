@@ -1,0 +1,112 @@
+.dialog-open {
+  height: 100%;
+  overflow: hidden;
+}
+
+.ky-dialog-wrapper {
+  display: none;
+  position: absolute;
+  bottom: 30px;
+}
+
+.ky-dialog {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #bcbcbc;
+  position: relative;
+  padding: 10px;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 145px;
+    left: -9px;
+    box-shadow: -2px 2px 3px #ddd;
+    transform: rotate(45deg);
+    background-color: #fff;
+  }
+
+  .ky-dialog-close {
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #202020;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .ky-dialog-content {
+    height: 100%;
+  }
+}
+
+@color-title-blue: #36c6d3;
+
+// dialog success
+.dialog-success {
+  text-align: center;
+  height: 100%;
+  .vertical-align-center();
+
+  .icon-wrapper {
+    text-align: center;
+
+    img {
+
+    }
+  }
+
+  h2 {
+    margin-top: 35px;
+    color: @color-title-blue;
+    font-weight: normal;
+  }
+
+  p {
+    margin-top: 25px;
+    color: #333;
+    font-size: 18px;
+  }
+}
+
+
+@color-btn-bg: #36C6D3;
+// dialog info
+.dialog-info {
+  height: 100%;
+  .vertical-align-center();
+
+  padding: 0 30px;
+
+  .btn-submit {
+    color: #fff;
+    font-size: 18px;
+    background-color: @color-btn-bg;
+    text-align: center;
+    border-radius: 20px;
+    width: 220px;
+    margin-top: 25px;
+    transition: all .3s;
+
+    &:hover {
+      background-color: darken(@color-btn-bg, 3%);
+    }
+
+    &:active {
+      background-color: darken(@color-btn-bg, 6%);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: lighten(@color-btn-bg, 5%);
+    }
+  }
+}

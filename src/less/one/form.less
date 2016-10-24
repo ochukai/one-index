@@ -1,0 +1,50 @@
+@height-input: 50px;
+@width-form-label: 70px;
+@padding-form-input: 80px;
+@color-form-text: #626262;
+
+.form-item {
+  position: relative;
+  font-size: 18px;
+  height: @height-input;
+  line-height: @height-input;
+  border-bottom: 1px solid #ddd;
+  color: @color-form-text;
+
+  label {
+    width: @width-form-label;
+    position: absolute;
+    text-align: right;
+    font-weight: normal;
+  }
+
+  input {
+    height: (@height-input - 2px);
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    -webkit-appearance: none;
+    border: 0;
+    background: none;
+    padding-left: @padding-form-input;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+}
+
+.form-en .form-item {
+
+  label {
+    width: (@width-form-label + 30px);
+  }
+
+  input {
+    padding-left: (@padding-form-input + 30px);
+  }
+
+}
